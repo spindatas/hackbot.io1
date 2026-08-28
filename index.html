@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>توقعات الذكاء الاصطناعي - الإيداع</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    .console-box {
+      font-family: monospace;
+      background-color: #1a1a1a;
+      padding: 1rem;
+      border-radius: 0.5rem;
+      box-shadow: 0 0 20px #00ff88;
+      color: #00ff88;
+      height: 250px;
+      overflow-y: auto;
+    }
+    .loading-screen {
+      font-family: monospace;
+      background: #000;
+      color: #00ff88;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      flex-direction: column;
+      z-index: 50;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+    }
+    .hidden-screen { display: none; }
+  </style>
+</head>
+<body class="bg-gray-900 text-white font-sans">
+  <div id="loading" class="loading-screen hidden-screen">
+    <p>جارٍ التحميل... يرجى الانتظار ريثما نجهز تجربتك.</p>
+  </div>
+  <div id="mainContent" class="">
+    <header class="w-full bg-gray-800 p-4 flex justify-between items-center">
+      <h1 class="text-xl font-bold text-green-400">توقعات طارق الخصاونة 1xBet AI</h1>
+      <nav class="space-x-4">
+        <a href="#how" class="hover:text-green-400">كيف يعمل</a>
+        <a href="#games" class="hover:text-green-400">لعبة</a>
+        <a href="#start" class="hover:text-green-400">ابدأ</a>
+      </nav>
+    </header>
+
+    <section class="min-h-screen flex flex-col items-center justify-center px-4 text-center">
+      <h2 class="text-3xl md:text-5xl font-bold mb-6">
+        اربح أموالاً حقيقية من خلال توقعات ألعاب الذكاء الاصطناعي
+      </h2>
+      <div class="mb-4 text-lg font-semibold text-yellow-300">
+        👋 أهلاً بكم في الخدمة الرسمية من <span class="text-green-400">Tareq Al-Khasawneh</span>!
+      </div>
+      <p class="max-w-xl mb-8 text-gray-300">
+        انضم إلى آلاف المستخدمين الذين يحققون أرباحًا بالفعل بفضل تقنية الذكاء الاصطناعي لدينا في ألعاب "Aviator" و"Mine" و"Penalty".
+
+دقة تصل إلى 98%، وتوقعات فورية، وسحب أرباح فوري!
+      </p>
+      <input id="userId" type="text" placeholder="Enter your 1xBet ID" class="bg-gray-700 text-white p-3 rounded-md mb-4">
+      <button id="connectButton" class="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-6 rounded-xl text-lg transition">ربط الحساب</button>
+
+      <div id="connectionSuccess" class="hidden text-green-400 font-bold mt-6">
+        <p>معرف الحساب: <span id="accountIdDisplay">1234567890</span> تسجيل الدخول بنجاح!</p>
+        <p>الحالة: نشط | دقة 100% باستخدام الذكاء الاصطناعي | خوارزمية التحليل</p>
+        <button id="getSignalButton" class="bg-green-500 hover:bg-green-600 text-white font-semibold py-3 px-6 rounded-xl text-lg transition mt-4">تلقي إشارة</button>
+      </div>
+
+      <div id="errorBox" class="hidden bg-red-600 p-6 rounded-xl max-w-md mx-auto mt-6">
+        <h2 class="text-xl font-bold mb-2">⚠️ لم يتم العثور على وحدة التخزين</h2>
+        <p class="mb-4">
+          يبدو أن رصيدك فارغ..  
+          يرجى إيداع مبلغ لا يقل عن <strong>10 JOD</strong> لفتح الوصول إلى الإشارات والبدء في تحقيق الفوز.
+        </p>
+        <a href="https://reffpa.com/L?tag=d_5922057m_72143c_&site=5922057&ad=72143&r=registration" target="_blank" id="depositButton" class="inline-block bg-yellow-400 hover:bg-yellow-500 text-black font-bold py-2 px-4 rounded-lg transition">
+          أودع الآن على 1xBet
+        </a>
+        <div class="mt-6 bg-red-800 text-white p-4 rounded-lg font-bold text-center">
+          <div class="mb-1 text-lg">رمزك الترويجي: <span class="bg-black p-1 rounded text-green-400">HTA888</span></div>
+          <div>Asire w ou enskri <span class="underline">فقط</span> استخدم هذا الرمز لتفعيل جميع الوظائف!</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-gray-800 py-12 px-6 text-center">
+      <h3 class="text-2xl font-bold text-green-400 mb-6">الفائز اليوم (JOD)</h3>
+      <div class="grid md:grid-cols-2 gap-4 text-left max-w-4xl mx-auto text-sm text-green-300">
+        <p>👤 User: 1778473422 – 978 JOD</p>
+        <p>👤 User: 1712384741 – 1065 JOD</p>
+        <p>👤 User: 1789234822 – 1614 JOD</p>
+        <p>👤 User: 1787339121 – 1321 JOD</p>
+        <p>👤 User: 1612900113 – 1181 JOD</p>
+        <p>👤 User: 1783721091 – 937 JOD</p>
+        <p>👤 User: 1651937742 – 994 JOD</p>
+        <p>👤 User: 1654921811 – 823 JOD</p>
+        <p>👤 User: 1783238742 – 779 JOD</p>
+        <p>👤 User: 1777749301 – 628 JOD</p>
+      </div>
+    </section>
+
+    <section id="games" class="bg-gray-800 py-12 px-6 text-center">
+      <h3 class="text-2xl font-bold text-green-400 mb-6">Jwèt Sipòte yo</h3>
+      <div class="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+        <div class="bg-gray-700 p-6 rounded-xl shadow-lg">
+          <h4 class="text-xl font-bold mb-2">🎮 Aviator</h4>
+          <p class="text-gray-300">توقع الوقت الأمثل لسحب الأموال قبل إقلاع الطائرة. يكشف نظام الذكاء الاصطناعي لدينا عن الاتجاهات في الوقت الفعلي.</p>
+        </div>
+        <div class="bg-gray-700 p-6 rounded-xl shadow-lg">
+          <h4 class="text-xl font-bold mb-2">💣 Mines</h4>
+          <p class="text-gray-300">تجنّب المخاطر، واجمع أرباحك. النظام يجد المسار الأقل خطورة لزيادة الأرباح إلى أقصى حد.</p>
+        </div>
+        <div class="bg-gray-700 p-6 rounded-xl shadow-lg">
+          <h4 class="text-xl font-bold mb-2">🥅 Penalty</h4>
+          <p class="text-gray-300">اعرف أين تسدد. تغلب على حارس المرمى بتوقعات مبنية على البيانات.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="how" class="bg-gray-900 py-12 px-6 text-center">
+      <h3 class="text-2xl font-bold text-green-400 mb-6">كيف يعمل؟</h3>
+      <div class="max-w-3xl mx-auto space-y-4 text-gray-300">
+        <p>📡 يقوم الذكاء الاصطناعي الخاص بنا بتحليل البيانات الحية وتاريخ اللعبة على مدار الساعة طوال أيام الأسبوع.</p>
+        <p>💡 يحدد الأنماط التي تؤدي إلى انتصارات متواصلة.</p>
+        <p>📲 استقبل إشارات موثوقة وفورية مباشرة على جهازك.</p>
+      </div>
+    </section>
+
+    <section class="bg-black py-12 px-6 text-center">
+      <h3 class="text-xl font-bold text-green-400 mb-4">[ وحدة التحكم - سجل النشاط ]</h3>
+      <div class="console-box max-w-3xl mx-auto text-left" id="console">
+        <p>[معلومات] خدمة التنبؤات نشطة ✅</p>
+      </div>
+    </section>
+
+    <footer class="text-center text-gray-500 text-sm py-6">
+      © ٢٠٢٥ توقعات IA. غير تابعة لـ 1xBet. يُرجى الاستخدام بمسؤولية.
+    </footer>
+  </div>
+
+  <script>
+    // Loading screen delay
+    setTimeout(() => {
+      document.getElementById("loading").classList.add("hidden-screen");
+      document.getElementById("mainContent").classList.remove("hidden-screen");
+    }, 3000);
+
+    // Connect account logic
+    document.getElementById("connectButton").addEventListener("click", () => {
+      const userId = document.getElementById("userId").value;
+      if (userId) {
+        document.getElementById("accountIdDisplay").innerText = userId;
+        document.getElementById("connectionSuccess").classList.remove("hidden");
+        document.getElementById("errorBox").classList.add("hidden");
+      }
+    });
+
+    // Show error box on signal request (as per original logic)
+    document.getElementById("getSignalButton").addEventListener("click", () => {
+      document.getElementById("errorBox").classList.remove("hidden");
+    });
+  </script>
+</body>
+</html>
